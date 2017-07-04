@@ -176,7 +176,7 @@ if True:
     train_net()
 
 if True:
-    net = get_dense161()
+    net = get_dense201()
     net.load_state_dict(torch.load(weight_file))
     preds = predict(net)
     submit(preds, 'submission1.csv')
